@@ -17,7 +17,7 @@ public class IdreamApplication {
 		SpringApplication.run(IdreamApplication.class, args);
 	}
 
-	@GetMapping("/get-data")
+	@GetMapping("/")
 	public String getData() {
 		LOGGER.info("*---------- micro service calld ---------*");
 		String resp = "<h1>Welcome from Micro Service</h1>";
