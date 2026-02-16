@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: idream-microservice
+
+server:
+  port: 8085
+  servlet:
+    context-path: /idream
