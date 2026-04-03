@@ -26,6 +26,19 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <name>testrepo</name>
+    <url>http://13.234.17.138:8081/repository/testrepo/</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus</id>
+    <name>testrepo</name>
+    <url>http://13.234.17.138:8081/repository/testrepo/</url>
+  </snapshotRepository>
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
