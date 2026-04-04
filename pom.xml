@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.idream</groupId>
 	<artifactId>idream-microservice</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.0</version>
 	<name>idream-microservice</name>
 	<description>idream microservice</description>
 	<properties>
@@ -23,17 +23,16 @@
 		</dependency>
 
 	</dependencies>
-
 <distributionManagement>
   <repository>
     <id>nexus</id>
     <name>test-repo</name>
-    <url>http://13.201.0.77:8081/repository/test-repo/</url>
+    <url>http://13.127.118.45:8081/repository/test-repo/</url>
   </repository>
   <snapshotRepository>
     <id>nexus</id>
     <name>test-repo</name>
-    <url>http://13.201.0.77:8081/repository/test-repo/</url>
+    <url>http://13.127.118.45:8081/repository/test-repo/</url>
   </snapshotRepository>
 </distributionManagement>
 
