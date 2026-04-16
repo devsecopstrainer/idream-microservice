@@ -20,7 +20,7 @@ public class IdreamApplication {
 	@GetMapping("/")
 	public String getData() {
 		LOGGER.info("*---------- micro service calld ---------*");
-		String resp = "<h1>Welcome from Micro Service</h1>";
+		String resp = "<h1>This is K8S Deployment</h1>";
 		LOGGER.info("Response sent from micro service -> " + resp);
 		return resp;
 	}
