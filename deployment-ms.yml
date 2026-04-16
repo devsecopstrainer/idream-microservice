@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-deployment
+  labels:
+    app-name: spring-boot-app
+spec: 
+  replicas: 2
+  selector:
+    matchLabels:
+      app-name: spring-boot-app
+  template:
+    metadata:
+      labels:
+        app-name: spring-boot-app
+    spec:
+      containers:
+        - name: sp-boot-cnt
+          image: devsecopstrainer/spring-boot-app:latest
+          ports:
+            - containerPort: 8080
